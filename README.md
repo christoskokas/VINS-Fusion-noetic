@@ -47,7 +47,7 @@ Clone the repository and catkin_make:
 ```
     mkdir -p ~/catkin_ws/src
     cd ~/catkin_ws/src
-    git clone https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git
+    git clone https://github.com/christoskokas/VINS-Fusion-noetic.git
     cd ../
     catkin_make
     source ~/catkin_ws/devel/setup.bash
