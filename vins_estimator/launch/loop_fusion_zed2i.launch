@@ -1,0 +1,4 @@
+<launch>
+  <node name="loop_fusion" pkg="loop_fusion" type="loop_fusion_node" output="screen" args="$(find vins)/../config/euroc/zed2i_camera.yaml">
+  </node>
+</launch>

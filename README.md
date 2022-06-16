@@ -1,3 +1,25 @@
+# VINS-FUSION-noetic
+
+VINS-FUSION-noetic is a package for VINS-FUSION for Ubuntu 20.04 with ROS Noetic.
+
+* Download VINS-FUSION-noetic package:
+
+```console
+git clone https://github.com/christoskokas/VINS-Fusion-noetic.git
+```
+
+* Build the ROS packages:
+
+```console
+catkin build vins
+catkin build loop_fusion
+```
+
+
+
+
+
+
 # VINS-Fusion
 ## An optimization-based multi-sensor state estimator
 
@@ -95,8 +117,9 @@ Download [KITTI Odometry dataset](http://www.cvlibs.net/datasets/kitti/eval_odom
 Open two terminals, run vins and rviz respectively. 
 (We evaluated odometry on KITTI benchmark without loop closure funtion)
 ```
-    roslaunch vins vins_rviz.launch
-    (optional) rosrun loop_fusion loop_fusion_node ~/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config00-02.yaml
+    roslaunch vins vins_rviz.launchLaunch the Gazebo environment:
+
+```on_node ~/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config00-02.yaml
     rosrun vins kitti_odom_test ~/catkin_ws/src/VINS-Fusion/config/kitti_odom/kitti_config00-02.yaml YOUR_DATASET_FOLDER/sequences/00/ 
 ```
 ### 4.2 KITTI GPS Fusion (Stereo + GPS)
